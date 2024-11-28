@@ -1,0 +1,258 @@
+.main{
+  
+    font-family: 'Quicksand', sans-serif;
+    
+    
+   
+    p{
+        margin: 1rem;
+        line-height: 2;
+        @media  only screen and (max-width: 768px){
+            margin: 0;
+            line-height: 1.3em;
+            padding: 0.5em;
+    }
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        background-color: $bg_oscuro;
+        border-radius: 1.3em;
+        justify-content: center;
+        font-size: 2em;
+        @media  only screen and (max-width: 768px){
+            font-size: 1.4em;
+        }
+       }
+    .nosotros{
+     padding: 2em;
+     background-color:$bg_claro;
+     margin-top: 1em;
+  
+     @media  only screen and (max-width: 768px){
+         
+         
+         padding: 0.5em;
+     }
+     .nosotros__p{
+         font-size: 1em;
+         color: rgb(255, 255, 255);
+        align-content:center;
+        font-style:italic ;
+     }
+
+    }
+
+
+    .nuestros-servicios{
+        background-color: 
+       $bg_claro;
+        padding: 2em;
+        @media  only screen and (max-width: 768px){
+            padding: 0.5em;
+            line-height: 1.3em;
+        }
+      
+        .servicios{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "Combos pOtrosServicios OtrosServicios"
+            "pCombos pIndividuales Individuales";
+            justify-items: center;
+            align-items: center;
+           padding: 1em;
+           @media  only screen and (max-width: 768px){
+            display:grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "Combos"
+            "OtrosServicios"
+            "Individuales";
+            justify-items: center;
+            align-items: center;
+           padding: 1em;
+            
+            
+            .servicios__div p{
+                   display: none;
+               }
+            }
+            
+            .servicios__div a {
+                   
+            display: inline-block;
+                
+            
+            color: rgb(255, 255, 255);
+            text-decoration-line: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: $bg_oscuro;
+            border: solid black 0.1em;
+            border-radius: 3em;
+            padding: 2em;
+          
+            
+            &:hover{
+                background-color: #08a9fa ;
+            }
+           
+          
+            .Combos{
+                grid-area: Combos;
+               
+             .pCombos{
+                grid-area: pCombos;
+                
+            }
+            }
+            .Individuales{
+                grid-area: Individuales;
+                .pIndividuales{
+                grid-area: pIndividuales;
+            }
+            }
+            .OtrosServicios{
+                grid-area: OtrosServicios;
+            .pOtrosServicios{
+                grid-area: pOtrosServicios;
+                            }
+                        }
+                    }
+                }   
+        }   
+
+    
+  .contactanos{
+    background-color: whitesmoke;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5em;
+    .contactanos-grid{
+        background:none;
+        align-items: center;
+        justify-items: center;
+      @media  only screen and ( max-width:768px){
+       background:none;
+        display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "iconos-p iconos";
+            justify-items: center;
+            align-items: center;
+            padding: 0px;
+             margin:0px;
+             width: 100%;
+             overflow: auto;
+           
+          
+           .iconos{
+               grid-area: iconos;
+               flex-direction: column;
+               margin-bottom: 0.5em;
+               margin: 3px;
+           }
+    }
+    
+    }
+   
+      .iconos-p{
+        display: flex;
+        justify-content: center;
+        font-size: 1.8em;
+        color: #90AD4C;
+             @media  only screen and (max-width:768px){
+               grid-area: iconos-p;
+               flex-direction: column;
+               font-size: 1em;
+        }
+    .iconos__div{
+        padding: 2em;
+         padding-bottom: 0.5em;
+        border-bottom: .1em solid #08a9fa;
+    }
+    } 
+    .iconos{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 2em;
+        padding-right: 3.5em;
+        @media  only screen and (max-width:768px){
+            grid-area:iconos;
+           flex-direction:column;
+           font-size: 1em;
+           margin-bottom: 0.5em;
+           margin:3px;  
+        }
+    .iconos img{
+        width: 3em;
+        @media  only screen and (max-width:768px){
+            width: 2em;
+            margin: 1em;
+        }
+    }
+        
+    } 
+}
+
+.formulario{
+    font-family: 'Quicksand', sans-serif;
+    padding: 1em;
+        .contact-form{
+            margin: 0;
+            width: 100%;
+            padding: .7em;
+            border:none;
+            background:none;
+            border-bottom: .1em solid $bg_oscuro;
+            outline: none;
+            .logo-h3{
+                text-align:start;
+                font-size: 2em;
+                padding: auto;
+                color: $bg_oscuro;
+            }
+            .textarea{
+                width: 100%;
+                padding: .7em;
+                border:none;
+                background:none;
+                border-bottom: .1em solid $bg_oscuro;
+                outline: none;
+            }
+            .boton-enviar{
+                width: 100%;
+                padding: .7em;
+                border:none;
+                background:none;
+                border-bottom: .1em solid $bg_oscuro;
+                outline: none;
+                background-color: $bg_oscuro;
+                border:0;
+                text-transform: uppercase;
+                padding: 1em;
+                &:hover{
+                    background-color: #08a9fa;
+                    color: white;
+                }
+            }
+            input{
+            width: 100%;
+            padding: .7em;
+            border:none;
+            background:none;
+            border-bottom: .1em solid $bg_oscuro;
+            outline: none;
+
+            }
+        }
+    }
+}

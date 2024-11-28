@@ -1,0 +1,19 @@
+.footer{
+    background-color:$bg_footer;
+    margin:0;
+    
+    .div-footer{
+        display: flex;
+        justify-content:center;
+        height: 7em;
+        margin: 1em auto;
+            .div-footer-a{
+                padding: 1em;
+                margin: 1em;
+            }
+            .div-footer-p{
+                margin: 1em;
+                padding: 1em;
+            }
+}
+}

@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+}
+
+body .container {
+  width: 100%;
+  margin: 0px auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+}
+
+.header {
+  padding: 2em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .header {
+    padding: 1em;
+    width: 100%;
+  }
+}
+
+.header .logo-nav-container {
+  width: 100%;
+  height: 7em;
+  background-color: #d3cece;
+  -webkit-box-shadow: 0.6em 0 1em rgba(0, 0, 0, 0.6);
+          box-shadow: 0.6em 0 1em rgba(0, 0, 0, 0.6);
+  border-radius: 0.5em;
+  font-size: 0.9em;
+  padding: 1em auto;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .logo-nav-container {
+    height: 350px;
+    padding: 1rem auto;
+    font-size: 0.9em;
+  }
+}
+
+.header .logo-nav-container .logo {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .logo-nav-container .logo {
+    padding: 10px 10px;
+  }
+}
+
+.header .logo-nav-container .menu__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .logo-nav-container .menu__ul {
+    padding-top: 1em;
+    background: none;
+    padding: 20px 0px;
+    display: inline-block;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    border-radius: 0.3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header .logo-nav-container .menu__ul .menu__li {
+  padding: 1em;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .logo-nav-container .menu__ul .menu__li {
+    padding: 1em;
+    display: block;
+    border-bottom: 0.1em solid #08a9fa;
+  }
+}
+
+.header .logo-nav-container .menu__ul .menu__li:hover {
+  background: #08a9fa;
+  color: white;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  border-radius: 0.7em;
+}
+
+.header .logo-nav-container .menu__ul .menu__li .menu__a {
+  text-decoration: none;
+  color: black;
+}
+
+.header .logo-nav-container .menu__ul .menu__li .menu__a:hover {
+  color: white;
+}
+
+.main {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.main p {
+  margin: 1rem;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .main p {
+    margin: 0;
+    line-height: 1.3em;
+    padding: 0.5em;
+  }
+}
+
+.main h2 {
+  color: black;
+  text-align: center;
+  background-color: #08a9fa;
+  border-radius: 1.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main h2 {
+    font-size: 1.4em;
+  }
+}
+
+.main .nosotros {
+  padding: 2em;
+  background-color: white;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .nosotros {
+    padding: 0.5em;
+  }
+}
+
+.main .nosotros .nosotros__p {
+  font-size: 1em;
+  color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-style: italic;
+}
+
+.main .nuestros-servicios {
+  background-color: white;
+  padding: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .nuestros-servicios {
+    padding: 0.5em;
+    line-height: 1.3em;
+  }
+}
+
+.main .nuestros-servicios .servicios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "Combos pOtrosServicios OtrosServicios" "pCombos pIndividuales Individuales";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .nuestros-servicios .servicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "Combos" "OtrosServicios" "Individuales";
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  .main .nuestros-servicios .servicios .servicios__div p {
+    display: none;
+  }
+}
+
+.main .nuestros-servicios .servicios .servicios__div a {
+  display: inline-block;
+  color: white;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #08a9fa;
+  border: solid black 0.1em;
+  border-radius: 3em;
+  padding: 2em;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a:hover {
+  background-color: #08a9fa;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .Combos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Combos;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .Combos .pCombos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pCombos;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .Individuales {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: Individuales;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .Individuales .pIndividuales {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pIndividuales;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .OtrosServicios {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: OtrosServicios;
+}
+
+.main .nuestros-servicios .servicios .servicios__div a .OtrosServicios .pOtrosServicios {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pOtrosServicios;
+}
+
+.main .contactanos {
+  background-color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 1.5em;
+}
+
+.main .contactanos .contactanos-grid {
+  background: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .contactanos .contactanos-grid {
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "iconos-p iconos";
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: auto;
+  }
+  .main .contactanos .contactanos-grid .iconos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: iconos;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0.5em;
+    margin: 3px;
+  }
+}
+
+.main .contactanos .iconos-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8em;
+  color: #08a9fa;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .contactanos .iconos-p {
+    grid-area: iconos-p;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1em;
+  }
+}
+
+.main .contactanos .iconos-p .iconos__div {
+  padding: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: .1em solid #08a9fa;
+}
+
+.main .contactanos .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 25px;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .contactanos .iconos {
+    grid-area: iconos;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    margin: 3px;
+  }
+}
+
+.main .contactanos .iconos .iconos img {
+  width: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .contactanos .iconos .iconos img {
+    width: 2em;
+    margin: 1em;
+  }
+}
+
+.main .formulario {
+  font-family: 'Quicksand', sans-serif;
+  padding: 1em;
+}
+
+.main .formulario .contact-form {
+  margin: 0;
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 0.1em solid #08a9fa;
+  outline: none;
+}
+
+.main .formulario .contact-form .logo-h3 {
+  text-align: start;
+  font-size: 2em;
+  padding: auto;
+  color: #08a9fa;
+}
+
+.main .formulario .contact-form .textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 0.1em solid #08a9fa;
+  outline: none;
+}
+
+.main .formulario .contact-form .boton-enviar {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 0.1em solid #08a9fa;
+  outline: none;
+  background-color: #08a9fa;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.main .formulario .contact-form .boton-enviar:hover {
+  background-color: #08a9fa;
+  color: white;
+}
+
+.main .formulario .contact-form input {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 0.1em solid #08a9fa;
+  outline: none;
+}
+
+.footer {
+  background-color: #d8d7d7;
+  margin: 0;
+}
+
+.footer .div-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 7em;
+  margin: 1em auto;
+}
+
+.footer .div-footer .div-footer-a {
+  padding: 1em;
+  margin: 1em;
+}
+
+.footer .div-footer .div-footer-p {
+  margin: 1em;
+  padding: 1em;
+}
+/*# sourceMappingURL=estilos.css.map */
