@@ -65,9 +65,10 @@ color: black;
     font-size: 1em;
     padding-right: 1.5em;
 }
-.contactanos-titulo{
+.FAQ-titulo{
     color: white;
     font-size: 1em;
+    font-weight: 300;
     padding-left: 1.7em;
 }
 .informacion-grid{
@@ -119,6 +120,37 @@ color: black;
 .iconos img{
     width: 3em;
 }
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+main h1 {
+    color: #08a9fa; /* Cambia este código de color por el que prefieras */
+    font-size: 2.5rem; /* Opcional: ajustá el tamaño del texto */
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.faq article h2 {
+    text-align: center; 
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq article p {
+    text-align: center; 
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 
 @media  only screen and (max-width: 765px){
     .header{

@@ -82,90 +82,63 @@ color: black;}
     padding-right: 1.5em;
 }
 
-.servicios-titulo{
-    color: white;
-    font-size: 1em;
-    padding-left: 1.7em;
-}
-.titulo-combos{
+
+.titulo-automotores{
     padding:1em;  
+    color: white;
+    background-color:#08a9fa;
+    justify-content:start;
+    display: flex;
 }
-.combos-div{
+
+.automoviles-div{
     width: 100%;
     background-color:#08a9fa;
     display: flex;
     justify-content:start;
 }
-.combos-h2{
+.automotores-h2{
     color: white;
     padding-left: 1em;
  }
-.titulo-individuales{
+.titulo-hogar{
     padding:1em;   
+    color: white;
+    background-color:#08a9fa ;
+    justify-content:start;
+    display: flex;
 }
-.individuales-div{
+
+.hogar-div{
     width: 100%;
+    color: white;
     background-color:#08a9fa ;
     display: flex;
     justify-content:start; 
 }
-.indiv-h2{
+.hogar-h2{
     color: white;
     padding-left: 1em;   
 }
-.titulo-accesorios{
-   padding:1em;    
+.titulo-comercio{
+    padding:1em;  
+    color: white;
+    background-color:#08a9fa;
+    justify-content:start;
+    display: flex;
 }
-.accesorios-div{
+
+.comercio-div{
     width: 100%;
-    background-color:#08a9fa ;
+    background-color:#08a9fa;
     display: flex;
     justify-content:start;
 }
-.acces-h2{
-   color: white;
-   padding-left: 1em;
-}
-.packs{
-    background-color:whitesmoke;
-    display: flex;
-    padding:0.5em;
-    margin: 0.4em;
-}
-.packs-div{
-    padding: 1em;
-}
-.packs h3{
-    font-size: 2em;
-    color: #08a9fa ;
-}
-.catalogo{
-    background-color: whitesmoke;
-    display: flex;
-    padding: 0.5em;
-    margin: 0.4em;
-    align-items: center;   
-}
-.catalogo-div{
-    padding: 5em;
-}
-.catalogo-h3{
-    color: #08a9fa;
-}
-.extras{
-    background-color: whitesmoke;
-    display: flex;
-    padding: 0.5em;
-    margin: 0.4em;
-    justify-items: center;
-    align-items: center;
-}
-.extras-div{
-    padding: 5em;
-}
-.extras-h3{
-    color:#90AD4C ;
-}
+.comercio-h2{
+    color: white;
+    padding-left: 1em;
+ }
+
 .footer{
     background-color: rgb(216, 215, 215); 
 }
