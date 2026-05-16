@@ -1,3 +1,5 @@
+/* Estilos Encabezado */
+
 *{
     padding: 0;
     margin: 0;
@@ -27,6 +29,8 @@
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;}
+
+    /* Estilos Menu*/
 
 .menu__ul{
     display: flex;
@@ -75,6 +79,9 @@ color: black;
     align-items: center;
     justify-items: center;
 }
+
+      /* Estilos footer */
+
 .footer{
     background-color: rgb(216, 215, 215); 
 }
@@ -119,6 +126,9 @@ color: black;
 .iconos img{
     width: 3em;
 }
+
+/* Ajustes de Media queries */
+
 
 @media  only screen and (max-width: 765px){
     .header{
@@ -224,4 +234,86 @@ color: black;
            width:2.4em;
            margin:8px;
        }
+    }
+    .mapa-seccion {
+        padding: 40px 0;
+      }
+      
+      .mapa-titulo {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 8px;
+      }
+      
+      .mapa-direccion {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        color: #666;
+        margin-bottom: 20px;
+      }
+      
+      .mapa-wrapper {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      
+      .mapa-links {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 16px;
+      }
+      
+      .mapa-links a {
+        text-decoration: none !important;
+        color: #000 !important;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700 !important;
+      }
+      
+      .mapa-links a:hover {
+        text-decoration: underline !important;
+      }
+      .whatsapp-flotante {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        background-color: #25D366;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: transform 0.2s ease;
+      }
+      
+      .whatsapp-flotante:hover {
+        transform: scale(1.1);
+      }
+      
+      .whatsapp-flotante img {
+        width: 18px;
+        height: 18px;
+      }
+      .div-footer-a a {
+        color: #000 !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+    }
+    
+    .div-footer-a a:hover {
+        text-decoration: underline !important;
+    }
+    .div-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-left: 2em !important;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+        height: auto !important;
     }

@@ -1,265 +1,412 @@
-*{
+/* ==========================================================================
+   ESTILOS GENERALES
+   ========================================================================== */
+ 
+   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.body{
-    background-color:rgb(255, 255, 255);
+ 
+body {
+    background-color: rgb(255, 255, 255);
     font-family: 'Quicksand', sans-serif;
 }
-.header{
+ 
+/* ==========================================================================
+   HEADER Y NAVEGACIÓN
+   ========================================================================== */
+ 
+.header {
     padding: 2em;
     width: 100%;
 }
-   .logo-nav-container{
+ 
+.logo-nav-container {
     width: 100%;
-    height:7em;
-    background-color:rgb(211, 206, 206);
+    height: 7em;
+    background-color: rgb(211, 206, 206);
     border-radius: 0.5em;
-    box-shadow: 0.6em 0 1em rgba(0, 0, 0, .6);
-    
-    padding: 1rem auto;
-    width: 100%;
+    box-shadow: 0.6em 0 1em rgba(0, 0, 0, 0.6);
+    padding: 1rem;
     color: black;
     display: flex;
-    
     justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;}
-
-.menu__ul{
+    align-items: center;
+}
+ 
+/* Menú principal */
+.menu__ul {
     display: flex;
     padding-top: 1em;
 }
-.menu__li{
-padding: 1em;
-display: block;
+ 
+.menu__li {
+    padding: 1em;
+    display: block;
 }
-        
-.menu__li:hover{
-background: rgb(#08a9fa);
-color: white;
-
-transition: all 1s linear;
-border-radius: 0.7em;
+ 
+.menu__li:hover {
+    background: #08a9fa;
+    color: white;
+    transition: all 1s linear;
+    border-radius: 0.7em;
 }
-.menu__a{
-text-decoration: none;
-color: black;
+ 
+.menu__a {
+    text-decoration: none;
+    color: black;
 }
-.menu__a:hover{
-        color:white;
-}            
-.sub-nav{
-    display: none;}
-.sub-nav:hover{
+ 
+.menu__a:hover {
+    color: white;
+}
+ 
+/* Sub navegación */
+.sub-nav {
+    display: none;
+}
+ 
+.sub-nav:hover {
     display: contents;
 }
-.sub-nav__li{
-text-decoration-line: none;
-list-style: none;}
-.sub-nav__a{
-text-decoration-line: none;
-color: black;}
-.sub-nav__a:hover{
-    color: white;
-    
+ 
+.sub-nav__li {
+    text-decoration: none;
+    list-style: none;
 }
-
-.breadcrumb{
-    display:inline-block;
+ 
+.sub-nav__a {
+    text-decoration: none;
+    color: black;
+}
+ 
+.sub-nav__a:hover {
+    color: white;
+}
+ 
+/* Breadcrumb */
+.breadcrumb {
+    display: inline-block;
     background-color: black;
     width: 100%;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
-    margin: 0.5em 0em; 
-    height: 4em; 
+    margin: 0.5em 0;
+    height: 4em;
     overflow: hidden;
 }
-
-.breadcrumb ol{
+ 
+.breadcrumb ol {
     font-size: 1em;
     padding-right: 1.5em;
 }
-
-
-.titulo-automotores{
-    padding:1em;  
+ 
+/* ==========================================================================
+   SECCIONES DE CONTENIDO
+   ========================================================================== */
+ 
+/* Sección Automotores */
+.titulo-automotores {
+    padding: 1em;
     color: white;
-    background-color:#08a9fa;
-    justify-content:start;
+    background-color: #08a9fa;
     display: flex;
+    justify-content: flex-start;
 }
-
-.automoviles-div{
+ 
+.automoviles-div {
     width: 100%;
-    background-color:#08a9fa;
+    background-color: #08a9fa;
     display: flex;
-    justify-content:start;
+    justify-content: flex-start;
 }
-.automotores-h2{
+ 
+.automotores-h2 {
     color: white;
     padding-left: 1em;
- }
-.titulo-hogar{
-    padding:1em;   
-    color: white;
-    background-color:#08a9fa ;
-    justify-content:start;
-    display: flex;
 }
-
-.hogar-div{
+ 
+/* Sección Hogar */
+.titulo-hogar {
+    padding: 1em;
+    color: white;
+    background-color: #08a9fa;
+    display: flex;
+    justify-content: flex-start;
+}
+ 
+.hogar-div {
     width: 100%;
     color: white;
-    background-color:#08a9fa ;
+    background-color: #08a9fa;
     display: flex;
-    justify-content:start; 
+    justify-content: flex-start;
 }
-.hogar-h2{
-    color: white;
-    padding-left: 1em;   
-}
-.titulo-comercio{
-    padding:1em;  
-    color: white;
-    background-color:#08a9fa;
-    justify-content:start;
-    display: flex;
-}
-
-.comercio-div{
-    width: 100%;
-    background-color:#08a9fa;
-    display: flex;
-    justify-content:start;
-}
-.comercio-h2{
+ 
+.hogar-h2 {
     color: white;
     padding-left: 1em;
- }
-
-.footer{
-    background-color: rgb(216, 215, 215); 
 }
-.footer-div{
+ 
+/* Sección Comercio */
+.titulo-comercio {
+    padding: 1em;
+    color: white;
+    background-color: #08a9fa;
+    display: flex;
+    justify-content: flex-start;
+}
+ 
+.comercio-div {
+    width: 100%;
+    background-color: #08a9fa;
+    display: flex;
+    justify-content: flex-start;
+}
+ 
+.comercio-h2 {
+    color: white;
+    padding-left: 1em;
+}
+ 
+/* Párrafos de contenido - Márgenes de 2cm */
+.automotores p,
+.hogar p,
+.comercio p {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+ 
+/* ==========================================================================
+   SECCIÓN PRESUPUESTO
+   ========================================================================== */
+ 
+.presupuesto {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+ 
+.presupuesto__div {
+    height: 3em;
+    background-color: black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+ 
+.presupuesto__a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+ 
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+ 
+.footer {
+    background-color: rgb(216, 215, 215);
+}
+ 
+.footer-div {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1em;
     height: 5em;
 }
-.h2-footer{
+ 
+.h2-footer {
     font-size: 1em;
 }
-.presupuesto{
-    margin: 1em;
+ 
+.div-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding-left: 2em !important;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    height: auto !important;
+}
+ 
+.div-footer-a a {
+    color: #000 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+ 
+.div-footer-a a:hover {
+    text-decoration: underline !important;
+}
+ 
+/* ==========================================================================
+   BOTÓN FLOTANTE DE WHATSAPP
+   ========================================================================== */
+ 
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
 }
-.presupuesto__div{
- height: 3em;
- background-color: black;
- border-radius: 2em;
- padding: 0.5em;
- border-radius: 1em ;
+ 
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
 }
-.presupuesto__a{
-    text-decoration-line: none;
-    font-size: 1.5em;
-    color: white;
+ 
+.whatsapp-flotante img {
+    width: 35px;
+    height: 35px;
 }
-
-@media screen and  (max-width: 765px){
-    .header{
-        padding: 1em;
-        width: 100%; 
-    }
-    .logo{
-        padding: 0 5px;  
-    }
-       
-    .logo-nav-container{
-            width: 100%;
-            height: 350px;
-            background-color:rgb(211, 206, 206);
-            border-radius: 0.3em;
-            box-shadow: 0.3em 0 1em rgba(0, 0, 0, .6);
-            padding: 1rem auto;
-            color: black;
-            font-size:0.9em;
-    }
-            
-    .menu__ul{
-    padding-top: 1em;
-    background: none;
-    padding: 20px 0;
-    display: inline-block;
-    left: 0;
-    top: 85px;
-    width: 100%;
-    border-radius: 0.3em;
-    align-items: center;
-    overflow: auto;
-            }
-.menu__li{
-padding: 1em;
-display: block;
-border-bottom: .1em solid rgb(#08a9fa);
-}
-.menu__li:hover{
-background: rgb(#08a9fa);
-color: white;
-border-radius: 0.7em;
-}
-.menu__a{
-text-decoration: none;
-color: black;
-}
-.menu__a:hover{
-    color:white;
-}            
-li{
-text-decoration-line: none;
-list-style: none;}
-a{
-text-decoration-line: none;
-color: black;}
-a:hover{
-    color: white;
-}
-.breadcrumb{
-    display:inline-block;
-    background-color: black;
-    width: 100%;
-    justify-content: space-between ;
-    align-items: center;
-    height: 4em; 
-    overflow: hidden;
-      
-}
-.packs{
-    flex-direction: column;
-}
-.packs-div{
-    padding: 1em;
+ 
+/* ==========================================================================
+   MEDIA QUERIES - RESPONSIVE
+   ========================================================================== */
+ 
+@media screen and (max-width: 765px) {
     
-}
-.packs-div li{
-    list-style:circle ;
-}
-.catalogo{
-    flex-direction: column; 
-}
-.catalogo-div{
-    padding: 1em;
-}
-.extras{
-    flex-direction: column;
-}
-.extras-div{
-    padding: 1em;
-}
-
-
+    /* Header responsive */
+    .header {
+        padding: 1em;
+        width: 100%;
+    }
+    
+    .logo {
+        padding: 0 5px;
+    }
+    
+    .logo-nav-container {
+        width: 100%;
+        height: 350px;
+        background-color: rgb(211, 206, 206);
+        border-radius: 0.3em;
+        box-shadow: 0.3em 0 1em rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+        color: black;
+        font-size: 0.9em;
+    }
+    
+    /* Menú responsive */
+    .menu__ul {
+        padding-top: 1em;
+        background: none;
+        padding: 20px 0;
+        display: inline-block;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        border-radius: 0.3em;
+        align-items: center;
+        overflow: auto;
+    }
+    
+    .menu__li {
+        padding: 1em;
+        display: block;
+        border-bottom: 0.1em solid #08a9fa;
+    }
+    
+    .menu__li:hover {
+        background: #08a9fa;
+        color: white;
+        border-radius: 0.7em;
+    }
+    
+    .menu__a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu__a:hover {
+        color: white;
+    }
+    
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: white;
+    }
+    
+    /* Breadcrumb responsive */
+    .breadcrumb {
+        display: inline-block;
+        background-color: black;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 4em;
+        overflow: hidden;
+    }
+    
+    /* Secciones responsive */
+    .packs {
+        flex-direction: column;
+    }
+    
+    .packs-div {
+        padding: 1em;
+    }
+    
+    .packs-div li {
+        list-style: circle;
+    }
+    
+    .catalogo {
+        flex-direction: column;
+    }
+    
+    .catalogo-div {
+        padding: 1em;
+    }
+    
+    .extras {
+        flex-direction: column;
+    }
+    
+    .extras-div {
+        padding: 1em;
+    }
+    
+    /* Ajuste de márgenes en mobile - Reducidos a 1cm */
+    .automotores p,
+    .hogar p,
+    .comercio p {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+    
+    /* WhatsApp flotante en mobile */
+    .whatsapp-flotante {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-flotante img {
+        width: 30px;
+        height: 30px;
+    }
 }

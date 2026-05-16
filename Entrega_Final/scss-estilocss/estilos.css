@@ -12,6 +12,43 @@ body .container {
   background-color: white;
 }
 
+.btn-cotizar {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 2em;
+  background-color: #08a9fa;
+  color: white !important;
+  font-weight: 700;
+  border-radius: 2em;
+  text-decoration: none !important;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color 0.3s ease;
+  border: 2px solid black;
+
+}
+
+.btn-cotizar:hover {
+  background-color: white;
+  color: #08a9fa !important;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    bottom: 2em;
+    font-size: 0.8em;
+  }
+}
+
 .header {
   padding: 2em;
   width: 100%;
@@ -141,9 +178,11 @@ body .container {
   background-color: #08a9fa;
   border-radius: 1.3em;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 2em;
+  padding: 0.3em 1em;
+  border: 2px solid black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -237,42 +276,6 @@ body .container {
 
 .main .nuestros-servicios .servicios .servicios__div a:hover {
   background-color: #08a9fa;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .Combos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Combos;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .Combos .pCombos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: pCombos;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .Individuales {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: Individuales;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .Individuales .pIndividuales {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: pIndividuales;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .OtrosServicios {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: OtrosServicios;
-}
-
-.main .nuestros-servicios .servicios .servicios__div a .OtrosServicios .pOtrosServicios {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: pOtrosServicios;
 }
 
 .main .contactanos {
@@ -454,23 +457,107 @@ body .container {
 }
 
 .footer .div-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 7em;
-  margin: 1em auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: auto;
+  gap: 0.3em;
+  margin: 0;
 }
 
 .footer .div-footer .div-footer-a {
-  padding: 1em;
-  margin: 1em;
+  padding: 0;
+  margin: 0;
 }
 
 .footer .div-footer .div-footer-p {
-  margin: 1em;
-  padding: 1em;
+  margin: 0;
+  padding: 0;
 }
-/*# sourceMappingURL=estilos.css.map */
+
+.texto-imagen {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.foto-andres {
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 1px solid black;
+}
+
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-flotante img {
+  width: 18px;
+  height: 18px;
+}
+
+.testimonios {
+  margin-top: 3em;
+  padding-top: 3em;
+  margin-bottom: 2em;
+}
+
+.div-footer-a a {
+  color: #000 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+.div-footer-a a:hover {
+  text-decoration: underline !important;
+}
+
+.aseguradoras {
+  margin-top: 5em;
+  padding-top: 2em;
+}
+
+.aseguradoras-titulo {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.aseguradoras-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.aseguradora-item img {
+  width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.aseguradora-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
