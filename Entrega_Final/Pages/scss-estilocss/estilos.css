@@ -561,3 +561,9 @@ body .container {
   filter: grayscale(0%);
   opacity: 1;
 }
+
+.aseguradora-item img {
+  width: 200px;       /* ajustá este valor a gusto */
+  height: auto;       /* mantiene proporciones */
+  object-fit: contain;
+}
